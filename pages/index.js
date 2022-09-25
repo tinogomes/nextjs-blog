@@ -14,26 +14,6 @@ export async function getStaticProps() {
   };
 }
 
-// Used to fetch data from external on server side rendering
-// export async function getServerSideProps(context) {
-//   return {
-//     props: {
-//       // props for your component
-//     },
-//   };
-// }
-
-// Used to fetch data from external on Client side rendering
-// import useSWR from 'swr';
-
-// function Profile() {
-//   const { data, error } = useSWR('/api/user', fetch);
-
-//   if (error) return <div>failed to load</div>;
-//   if (!data) return <div>loading...</div>;
-//   return <div>hello {data.name}!</div>;
-// }
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
